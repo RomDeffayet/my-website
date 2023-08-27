@@ -10,7 +10,7 @@ section: home
     <div class="hero__col">
       <h1 class="hero__title gradient-text">{{ home.title }}</h1>
       {% if home.body %}
-        <div class="hero__body">{{ home.body | markdown | safe }}</div>
+        <div class="hero__body"><b>I am a PhD candidate at <span class="highlighted" id="blue">Naver Labs Europe</span> and the <span class="highlighted" id="purple">University of Amsterdam</span></b></div>
       {% endif %}
     </div>
     <div class="hero__col">
@@ -24,6 +24,7 @@ section: home
     </div>
   </div>
 
+<!--
   {# Projects #}
   <div class="list-header">
     <h2 class="list-header__title">Projects</h2>
@@ -31,11 +32,12 @@ section: home
   </div>
   {% from "macros/projectlist.njk" import projectlist %}
   {{ projectlist(projects = collections.project | reverse) }}
+-->
 
-  {# Articles #}
+  {# Selected publications #}
   <div class="list-header">
-    <h2 class="list-header__title">Articles</h2>
-    <a class="btn btn--outline btn--sm" href="/blog">View All</a>
+    <h2 class="list-header__title">Selected publications</h2>
+    <a class="btn btn--outline btn--sm" href="/publications">View All</a>
   </div>
   {% from "macros/articlelist.njk" import articlelist %}
   {{ articlelist(

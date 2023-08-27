@@ -1,6 +1,22 @@
 <footer class="site-footer">
   <small>
-    Website built with <a href="https://www.11ty.dev/" target="_blank">Eleventy</a>.
-    Source code on <a href="{{ pkg.repository.url }}" target="_blank">GitHub</a>.
+    <a rel="me" href="https://sigmoid.social/@romain">
+      {% image
+        "src/assets/img/mastodon-icon.svg",
+        "Mastodon",
+        "(min-width: 1024px) 50vw, 100vw",
+        "footer-icon",
+        "eager"
+      %}
+    </a>
+    <a href="https://twitter.com/RDeffayet">
+    {% image
+        "src/assets/img/twitter-icon.svg",
+        "Twitter",
+        "(min-width: 1024px) 50vw, 100vw",
+        "footer-icon",
+        "eager"
+      %}
+    </a>
   </small>
 </footer>

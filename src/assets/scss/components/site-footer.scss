@@ -10,3 +10,13 @@
     padding: 15px 30px;
   }
 }
+
+.footer-icon {
+  max-width: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+}
