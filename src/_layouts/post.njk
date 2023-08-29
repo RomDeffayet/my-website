@@ -6,8 +6,23 @@ section: post
   <article>
     <h1>{{ title }}</h1>
     <p>
-      <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
+      <small>
+        {% for coauthor in coauthors %}
+         {{ coauthor }}{% if loop.index != coauthors.length %}, {% endif %}
+        {% endfor %}
+      </small> </br>
+      <small>
+        {{ status }} {{ venue }}
+      </small> </br>
+      {% if paper_url != "nourl" %}
+        <a href={{ paper_url }}>Paper</a>
+        {% if code_url != "nourl" %}
+           | 
+          <a href={{ code_url }}>Code</a>
+        {% endif %}
+      {% endif %}
     </p>
+
     <hr/>
 
     {{ layoutContent | safe }}

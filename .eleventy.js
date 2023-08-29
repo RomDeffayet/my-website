@@ -28,6 +28,26 @@ module.exports = function (eleventyConfig) {
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
 
+  // Add support for maintenance-free post authors
+  // Adds an authors collection using the author key in our post frontmatter
+  // Thanks to @pdehaan: https://github.com/pdehaan
+  eleventyConfig.addCollection("authors", collection => {
+    const blogs = collection.getFilteredByGlob("posts/*.md");
+    return blogs.reduce((coll, post) => {
+      for (coauthor in post.data.coauthors) {
+        const author = post.data.coauthors[coauthor];
+        if (!author) {
+          return coll;
+        }
+        if (!coll.hasOwnProperty(author)) {
+          coll[author] = [];
+        }
+        coll[author].push(post.data);
+      }
+      return coll;
+    }, {});
+  });
+
   // Trigger a build when files in this directory change
   eleventyConfig.addWatchTarget('./src/assets/scss/');
 
