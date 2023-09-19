@@ -3,7 +3,7 @@ title: An Offline Metric for the Debiasedness of Click Models
 date: 2023-04-11
 venue: SIGIR'23
 status: Accepted at
-paper_url: https://arxiv.org/abs/2304.09560
+paper_url: https://dl.acm.org/doi/10.1145/3539618.3591639
 code_url: https://github.com/philipphager/cmip
 coauthors: 
   - Romain Deffayet

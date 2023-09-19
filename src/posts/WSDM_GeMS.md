@@ -3,7 +3,7 @@ title: Generative Slate Recommendation with Reinforcement Learning
 date: 2022-10-28T19:17:50.200Z
 venue: WSDM'23
 status: Published at
-paper_url: https://arxiv.org/abs/2301.08632v2
+paper_url: https://dl.acm.org/doi/10.1145/3539597.3570412
 code_url: https://github.com/naver/gems
 coauthors: 
   - Romain Deffayet

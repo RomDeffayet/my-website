@@ -8,7 +8,7 @@ coauthors:
   - Maarten de Rijke
 venue: SIGIR Forum
 status: Published in
-paper_url: https://sigir.org/wp-content/uploads/2023/01/p03.pdf
+paper_url: https://dl.acm.org/doi/10.1145/3582900.3582905
 code_url: nourl
 summary: "We discussed offline evaluation for RL-based recommender systems and noted that the most common evaluation protocol, i.e., next-item prediction, is unsuited to such approaches."
 metaDescription: Published in SIGIR Forum.

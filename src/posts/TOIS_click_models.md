@@ -6,7 +6,7 @@ coauthors:
   - Jean-Michel Renders
   - Maarten de Rijke
 venue: ACM TOIS
-status: Just accepted in
+status: Published in
 paper_url: https://dl.acm.org/doi/abs/10.1145/3569086
 code_url: https://github.com/naver/dist-shift-click-models
 summary: "We investigated how click models *actually* perform (spoiler: not so
