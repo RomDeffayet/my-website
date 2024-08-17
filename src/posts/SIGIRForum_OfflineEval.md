@@ -1,5 +1,5 @@
 ---
-title: "Offline Evaluation for Reinforcement Learning-based Recommendation - A Critical Issue and Some Alternatives"
+title: "Offline Evaluation for Reinforcement Learning-based Recommendation: A Critical Issue and Some Alternatives"
 date: 2023-02-03
 coauthors: 
   - Romain Deffayet
@@ -16,7 +16,6 @@ tags:
   - Reinforcement Learning
   - Recommendation
   - Offline Evaluation
-  - Selected_publication
 ---
 We discussed offline evaluation for RL-based recommender systems and noted that the most common evaluation protocol, i.e., next-item prediction, is unsuited to such approaches.
 

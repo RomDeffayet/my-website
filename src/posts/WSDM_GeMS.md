@@ -18,7 +18,6 @@ tags:
   - Reinforcement Learning
   - Recommendation
   - Slate Recommendation
-  - Selected_publication
 ---
 
 Learning to recommend slates with RL is hard, because of the combinatorial action-space. Instead of making assumptions on user behavior, we tried taking actions in the latent space of a VAE, which then decodes slates.

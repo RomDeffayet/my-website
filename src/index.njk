@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 section: home
+
 ---
 <div class="home-page">
 	<div class="home-page__bg-square"></div>
@@ -10,7 +11,7 @@ section: home
     <div class="hero__col">
       <h1 class="hero__title gradient-text">{{ home.title }}</h1>
       {% if home.body %}
-        <div class="hero__body"><b>I am a PhD candidate at <span class="highlighted" id="blue">Naver Labs Europe</span> and the <span class="highlighted" id="purple">University of Amsterdam</span></b></div>
+        <div class="hero__body"><b>I am a researcher at <a style="text-decoration:none; color:inherit;" href="https://europe.naverlabs.com/">Naver Labs Europe</a>, </br>where I teach robots how to do stuff.</div>
       {% endif %}
     </div>
     <div class="hero__col">
@@ -39,10 +40,11 @@ section: home
     <h2 class="list-header__title">Selected publications</h2>
     <a class="btn btn--outline btn--sm" href="/publications">View All</a>
   </div>
-  {% from "macros/articlelist.njk" import articlelist %}
-  {{ articlelist(
-    articles = collections.post | reverse,
-    show_tags = false,
-    limit = 3
+  {% from "macros/selected_articlelist.njk" import selected_articlelist %}
+  {{ selected_articlelist(
+  articles = collections.post | reverse,
+  show_tags = false,
+  limit = undefined
   ) }}
+  
 </div>

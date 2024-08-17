@@ -9,8 +9,8 @@ eleventyNavigation:
   order: 1
 ---
 
-I joined the IRLab of the University in Amsterdam in January 2022 as a PhD student under the supervision of Prof. Maarten de Rijke, in partnership with Naver Labs Europe where Jean-Michel Renders is advising me.
+I am a Research Scientist at <a href="https://europe.naverlabs.com/">Naver Labs Europe</a> in Grenoble, France, where I work on machine learning for robotics.
 
-Previously, I had been working as a research engineer at Naver Labs Europe in Grenoble, France and at Huawei in Stockholm, Sweden.
+Previously, I was a PhD student in the <a href="https://irlab.science.uva.nl/">IRLab of the University in Amsterdam</a> under the supervision of Prof. Maarten de Rijke, in partnership with Naver Labs Europe where I was advised by Jean-Michel Renders. I wrote a thesis titled <a href=""><i>Taming the Dynamics of Recommender Systems</i></a>.
 
-My researches resolves mostly around reinforcement learning for recommender systems, including distributional RL and click modeling for unbiased offline RL.
+Before that, I had been working as a research engineer at Naver Labs Europe in Grenoble, France and at Huawei in Stockholm, Sweden.
